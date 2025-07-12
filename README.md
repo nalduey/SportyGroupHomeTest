@@ -14,7 +14,7 @@ How to run the project locally
 
 1 Clone the repository
 
-git clone https://github.com/yourusername/SportyGroupHomeTest.git
+git clone https://github.com/nalduey/SportyGroupHomeTest.git
 cd SportyGroupHomeTest
 
 
