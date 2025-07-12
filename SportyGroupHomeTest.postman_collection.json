@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "5a1f0125-7203-44e4-9e6c-da5e9586e451",
+		"name": "SportyGroupHomeTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20375764"
+	},
+	"item": [
+		{
+			"name": "Provider Alpha Odds",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"msg_type\": \"odds_update\", \"event_id\": \"ev123\", \"values\": { \"1\": 2.0, \"X\": 3.1, \"2\": 3.8 } }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/provider-alpha/feed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"provider-alpha",
+						"feed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Provider Alpha Settlement",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"msg_type\": \"settlement\", \"event_id\": \"ev123\", \"outcome\": \"1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/provider-alpha/feed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"provider-alpha",
+						"feed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Provider Beta Odds",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/provider-alpha/feed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"provider-alpha",
+						"feed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Provider Beta Odds Settlement",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"type\": \"SETTLEMENT\", \"event_id\": \"ev456\", \"result\":\"away\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/provider-beta/feed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"provider-beta",
+						"feed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
